@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/js/main.js',
@@ -31,6 +32,12 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'css/style.css',
     }),
+
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+      filename: 'index.html',
+      inject: true,
+    }),
   ],
 
   devServer: {
@@ -40,8 +47,7 @@ module.exports = {
     hot: true,
     open: true,
     port: 8080,
-    devMiddleware: {
-      publicPath: '/',
-    },
   },
+
+  target: 'web',
 };
