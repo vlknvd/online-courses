@@ -1,0 +1,36 @@
+.catalog {
+  margin-top: 61px;
+  &__grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: clamp(16px, 2.5vw, 30px);
+
+    @media (max-width: 1670px) {
+      justify-content: center;
+    }
+  }
+
+  &__no-results {
+    font-weight: 700;
+    font-size: clamp(16px, 2.8vw, 20px);
+    color: var(--color-gray-900);
+    text-align: center;
+  }
+
+  &__actions {
+    margin-top: 80px;
+  }
+
+  &__btn {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--color-gray-800);
+  }
+}

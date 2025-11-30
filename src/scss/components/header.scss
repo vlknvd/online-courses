@@ -1,0 +1,15 @@
+.header {
+  text-align: center;
+  &__pretitle {
+    font-weight: 700;
+    font-size: clamp(16px, 5.5vw, 12px);
+    text-transform: uppercase;
+    color: var(--color-gray-900);
+  }
+  &__title {
+    font-weight: 900;
+    font-size: clamp(28px, 5.5vw, 46px);
+    color: var(--color-gray-900);
+    margin-top: 8px;
+  }
+}

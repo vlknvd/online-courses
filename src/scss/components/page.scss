@@ -1,0 +1,17 @@
+.page {
+  min-height: 100vh;
+  background: var(--color-white);
+  color: var(--gray-900);
+  font-family: 'Lato', system-ui, sans-serif;
+  line-height: 1.5;
+
+  &__main {
+    margin-top: clamp(40px, 8vw, 85px);
+  }
+}
+
+.container {
+  width: min(100% - 40px, var(--container));
+  padding: 44px 0 86px;
+  margin: 0 auto;
+}
